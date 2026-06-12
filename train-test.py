@@ -1,17 +1,3 @@
-# This file is adapted from the Hugging Face diffusers official Qwen-Image-Edit training example,
-# aligned with diffusers version 0.36.0.dev0 and the Qwen-Image-Edit model family.
-#
-# For research and educational purposes only. For any commercial use, please comply with the original licenses and copyright terms of both Qwen-Image and diffusers.
-# Copyright (c) Original Authors of diffusers and Qwen-Image-Edit. All rights reserved.
-#
-# Documentation:
-# OrionEdit training entry point. The paper originally used Qwen-Image-Edit-2509; this repository trains against Qwen-Image-Edit-2511.
-# The script extends the stock diffusers training loop with OrionEdit-specific components (e.g., CustomDataset, OrionEditPipeline,
-# OrionEditTransformer2DModel, decoupling / LoRA helpers, and checkpoint utilities) while retaining diffusers schedulers, VAE hooks,
-# optimization helpers, and accelerate-based distributed training patterns.
-# For implementation details, refer to inline comments, argparse help strings, and the docstrings of the OrionEdit modules imported below.
-# This file is intended for research and educational purposes only; for any commercial use, please comply with the original licenses of Qwen-Image and diffusers.
-
 import argparse
 import copy
 import logging
